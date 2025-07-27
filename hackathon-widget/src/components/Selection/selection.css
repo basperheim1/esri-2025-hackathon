@@ -1,0 +1,50 @@
+.bounding-boxes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.selection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 350px;
+
+}
+
+.box{
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  min-width: 250px;
+  height: 300px;
+  margin: 20px;
+  flex-shrink: 0;
+}
+
+.card.selected {
+  border: 2px solid #007ac2; /* ArcGIS blue */
+  background-color: #e6f2fb; /* light blue */
+  box-shadow: 0 0 10px rgba(0, 122, 194, 0.4);
+  transform: scale(1.02);
+}
+
+.bounding-box-map-popup {
+  position: fixed; /* 👈 floats above the rest */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
